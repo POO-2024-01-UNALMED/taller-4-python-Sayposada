@@ -1,9 +1,9 @@
-from classroom.asignatura import Asignatura
+from classroom.Asignatura import Asignatura
 
 class Grupo:
     grado = None
 
-    def _init_(self, grupo="grupo predeterminado", asignaturas=None, estudiantes=None):
+    def __init__(self, grupo="grupo predeterminado", asignaturas=None, estudiantes=None):
         if asignaturas is None:
             asignaturas = []
         if estudiantes is None:
@@ -24,7 +24,7 @@ class Grupo:
         for elemento in lista:
             self.listadoAlumnos.append(elemento)
 
-    def _str_(self):
+    def __str__(self):
          return "Grupo de estudiantes: " + self._grupo
 
     @ classmethod
