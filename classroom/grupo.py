@@ -1,4 +1,4 @@
-from classroom.Asignatura import Asignatura
+from classroom.asignatura import Asignatura
 
 class Grupo:
     grado = None
